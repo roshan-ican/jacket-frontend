@@ -22,13 +22,17 @@ const Home = () => {
         {snap.intro && (
           <motion.section className="home" {...slideAnimation("left")}>
             <motion.header {...slideAnimation("down")}>
-              <img src="./threejs.png" alt="logo" />
+              <img
+                src="./threejs.png"
+                alt="logo"
+                style={{ width: "48px", height: "48px", objectFit: "contain" }}
+              />
             </motion.header>
 
             <motion.div className="home-content" {...headContainerAnimation}>
               <motion.div {...headTextAnimation}>
                 <h1 className="head-text">
-                  LET'S <br className="xl:block hidden" /> DO IT.
+                  LET'S <br className="md:block hidden" /> DO IT.
                 </h1>
               </motion.div>
 
