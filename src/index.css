@@ -6,10 +6,23 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+canvas {
+  background: transparent !important; /* ✅ */
+}
+
+body,
+html,
+.app {
+  background: transparent !important;
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: transparent !important;
+}
+canvas {
+  background-color: transparent !important;
+}
 @supports (font-variation-settings: normal) {
   html {
     font-family: "Inter var", sans-serif;
